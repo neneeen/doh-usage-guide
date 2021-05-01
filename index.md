@@ -31,7 +31,7 @@
  
  <a name="apple"></a>
  ## iOS & macOS
- Import DoH dari salah satu profile di https://dns.notjakob.com/premades.html, download dan buka filenya. Lalu ke `Settings` (iOS)/`Sytem Preferences` (macOS), `Profile Downloaded`(iOS)/`Profie`(macOS), pilih install. Kalau semua tidak bisa, pilih buat custom profile dengan https://dns.notjakob.com/tool.html, pilih DoH dan masukkan provider dari https://github.com/curl/curl/wiki/DNS-over-HTTPS. Jika *masih* tidak bisa, ikuti panduan [Warp Client](#warp)
+ Import DoH dari salah satu profile di https://dns.notjakob.com/premades.html, download dan buka filenya. Lalu ke `Settings` (iOS)/`System Preferences` (macOS), `Profile Downloaded`(iOS)/`Profie`(macOS), pilih install. Kalau semua tidak bisa, buat custom profile dengan https://dns.notjakob.com/tool.html, pilih DoH dan masukkan provider dari https://github.com/curl/curl/wiki/DNS-over-HTTPS. Jika *masih* tidak bisa, ikuti panduan [Warp Client](#warp)
 
 <a name="firefox"></a>
 ## Firefox, Pale Moon, Waterfox
