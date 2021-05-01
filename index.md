@@ -14,7 +14,7 @@ Buka `Settings` - `Network & internet` - `Advanced` - `Private DNS`. Tidak ada? 
 Pilih `Private DNS provider hostname`
  
 Coba salah satu :
- * `dns.google` ([Google](https://developers.google.com/speed/public-dns/docs/dns-over-tls))
+ * `dns.google` [Google](https://developers.google.com/speed/public-dns/docs/dns-over-tls)
  * `security.cloudflare-dns.com` [Cloudflare](https://developers.cloudflare.com/1.1.1.1/1.1.1.1-for-families/setup-instructions/dns-over-https)
  * `dns.quad9.net` [Quad9](https://www.quad9.net/service/service-addresses-and-features#rec)
  * `dot.tiar.app` [Tiarap DNS](https://github.com/pengelana/blocklist#dot-dns-over-tls)
@@ -45,7 +45,7 @@ Download dan install [Warp Client](https://developers.cloudflare.com/warp-client
 
 <a name="hipokrit"></a>
 ## Blokir iklan, tracker & malware
-Setelah buka blokiran mau blokir yang nggak diinginkan? Bisa. Paling gampang pakai [AdGuard](https://kb.adguard.com/en/dns/setup-guide) (ada blokir iklan, iklan + bokep) atau [AhaDNS](https://ahadns.com/) (murni blokir iklan). Blokir lebih mendalam untuk materi dewasa bisa pakai [CleanBrowsing](https://cleanbrowsing.org/guides/). Kalau mereka diblokir ISP, bisa pakai provider yang kurang terkenal, pilih dari https://github.com/curl/curl/wiki/DNS-over-HTTPS. Kalau mau lebih mendetail, pilih sendiri filter iklannya, monitor anggota keluarga, filter untuk anak dll bisa pakai [NextDNS](https://nextdns.io/), tapi setelah lebih dari 300 ribu query dalam sebulan, filter & logging nggak jalan (semua request tembus) sampai bulan berikutnya kecuali langganan. Dan kalau ngerasa "oh bisa buat blokir bokep nih", ingat di atas itu semua panduannya juga bisa untuk ganti lagi ke provider yang nggak blokir, jadi nggak berguna untuk mencegah seseorang yang *sengaja* ingin buka. Blokir iklan juga tidak sebagus metode extension seperti uBlock Origin, gunanya lebih sebagai pelengkap untuk aplikasi/OS yang tidak bisa pasang ekstensi
+Setelah buka blokiran mau blokir yang nggak diinginkan? Bisa. Paling gampang pakai [AdGuard](https://kb.adguard.com/en/dns/setup-guide) (ada blokir iklan, iklan + bokep) atau [AhaDNS](https://ahadns.com/) (murni blokir iklan). Blokir lebih mendalam untuk materi dewasa bisa pakai [CleanBrowsing](https://cleanbrowsing.org/guides/). Kalau mereka diblokir ISP, bisa pakai provider [yang kurang terkenal](https://github.com/curl/curl/wiki/DNS-over-HTTPS). Kalau mau lebih mendetail, pilih sendiri filter iklannya, monitor anggota keluarga, filter untuk anak dll bisa pakai [NextDNS](https://nextdns.io/), tapi setelah lebih dari 300 ribu query dalam sebulan, filter & logging nggak jalan (semua request tembus) sampai bulan berikutnya kecuali langganan. Dan kalau ngerasa "oh bisa buat blokir bokep nih", ingat di atas itu semua panduannya juga bisa untuk ganti lagi ke provider yang nggak blokir, jadi nggak berguna untuk mencegah seseorang yang *sengaja* ingin buka. Blokir iklan juga tidak sebagus metode extension seperti uBlock Origin, gunanya lebih sebagai pelengkap untuk aplikasi/OS yang tidak bisa pasang ekstensi
 
 <a name="blabber"></a>
 ## Detail Teknis
