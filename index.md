@@ -20,24 +20,24 @@ Coba salah satu :
  * `dot.tiar.app` [Tiarap DNS](https://github.com/pengelana/blocklist#dot-dns-over-tls)
  * `doh.mullvad.net` [Mullvad](https://mullvad.net/en/help/dns-over-https-and-dns-over-tls/)
  
-Save. Cek koneksi internet. Kalau tidak ada koneksi, coba lainnya. Kalau semua tidak bisa, pilih `Off`, buka http://portquiz.net:853 :
- * Kalau bisa dibuka, cari dari https://kb.adguard.com/en/general/dns-providers, pilih yang di baris `DNS-over-TLS`.
+Save. Cek koneksi internet. Kalau tidak ada koneksi, coba lainnya. Kalau semua tidak bisa, pilih `Off`, buka [PortQuiz](http://portquiz.net:853) :
+ * Kalau bisa dibuka, coba [provider lain](https://kb.adguard.com/en/general/dns-providers), pilih yang di baris `DNS-over-TLS`.
  * Kalau tidak bisa, ikuti panduan berikut
 
 ### Oreo (8) dan sebelumnya
-Install [Nebulo](https://play.google.com/store/apps/details?id=com.frostnerd.smokescreen) atau [Intra](https://play.google.com/store/apps/details?id=app.intra), pilih salah satu provider bawaan. Kalau semua tidak bisa, coba provider lain dari https://github.com/curl/curl/wiki/DNS-over-HTTPS. Jika *masih* tidak bisa, ikuti panduan [Warp Client](#warp)
+Install [Nebulo](https://play.google.com/store/apps/details?id=com.frostnerd.smokescreen) atau [Intra](https://play.google.com/store/apps/details?id=app.intra), pilih salah satu provider bawaan. Kalau semua tidak bisa, coba [provider lain](https://github.com/curl/curl/wiki/DNS-over-HTTPS). Jika *masih* tidak bisa, ikuti panduan [Warp Client](#warp)
  
 <a name="chrome"></a>
 ## Chrome, Edge, Brave, Opera
-Buka `Settings`, cari dan aktifkan `Secure DNS` atau `DNS-over-HTTPS`, pilih salah satu provider bawaan. Kalau semua tidak bisa, pilih Custom dan masukkan provider lain dari https://github.com/curl/curl/wiki/DNS-over-HTTPS. Jika *masih* tidak bisa, ikuti panduan [Warp Client](#warp)
+Buka `Settings`, cari dan aktifkan `Secure DNS` atau `DNS-over-HTTPS`, pilih salah satu provider bawaan. Kalau semua tidak bisa, pilih Custom dan masukkan [provider lain](https://github.com/curl/curl/wiki/DNS-over-HTTPS). Jika *masih* tidak bisa, ikuti panduan [Warp Client](#warp)
  
 <a name="apple"></a>
 ## iOS & macOS
-Import DoH dari salah satu profile di https://dns.notjakob.com/premades.html, download dan buka filenya. Lalu ke `Settings` (iOS)/`System Preferences` (macOS), `Profile Downloaded`(iOS)/`Profie`(macOS), pilih install. Kalau semua tidak bisa, buat custom profile dengan https://dns.notjakob.com/tool.html, pilih DoH dan masukkan provider dari https://github.com/curl/curl/wiki/DNS-over-HTTPS. Jika *masih* tidak bisa, ikuti panduan [Warp Client](#warp)
+Import DoH dari salah satu [profile premade](https://dns.notjakob.com/premades.html), download dan buka filenya. Lalu ke `Settings` (iOS)/`System Preferences` (macOS), `Profile Downloaded`(iOS)/`Profie`(macOS), pilih install. Kalau semua tidak bisa, buat [custom profile](https://dns.notjakob.com/tool.html), pilih DoH dan masukkan [provider lain](https://github.com/curl/curl/wiki/DNS-over-HTTPS). Jika *masih* tidak bisa, ikuti panduan [Warp Client](#warp)
 
 <a name="firefox"></a>
 ## Firefox, Pale Moon, Waterfox
-Buka `Option`, cari `Network Settings`, aktifkan `Enable DNS over HTTPS`, pilih dari provider bawaan. Kalau semua tidak bisa, pilih Custom dan masukkan provider lain dari https://github.com/curl/curl/wiki/DNS-over-HTTPS. Jika *masih* tidak bisa, ikuti panduan [Warp Client](#warp)
+Buka `Option`, cari `Network Settings`, aktifkan `Enable DNS over HTTPS`, pilih dari provider bawaan. Kalau semua tidak bisa, pilih Custom dan masukkan [provider lain](https://github.com/curl/curl/wiki/DNS-over-HTTPS). Jika *masih* tidak bisa, ikuti panduan [Warp Client](#warp)
 
 <a name="warp"></a>
 ## Warp Client
