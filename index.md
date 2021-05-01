@@ -3,6 +3,8 @@
 * [iOS & macOS](#apple)
 * [Firefox, Pale Moon, Waterfox](#firefox)
 * [Warp Client](#warp)
+* [Blokir iklan, tracker & malware](#hipokrit)
+* [Detail Teknis](#blabber)
 
 <a name="android"></a>
 ## Android
@@ -39,4 +41,16 @@ Buka `Option`, cari `Network Settings`, aktifkan `Enable DNS over HTTPS`, pilih 
 
 <a name="warp"></a>
 ## Warp Client
-Download dan install [Warp Client](https://developers.cloudflare.com/warp-client/warp-for-everyone/setting-up), untuk Linux bisa pakai [wcgf](https://github.com/ViRb3/wgcf). **Masih** belum bisa juga? Berarti perlu VPN (lain, karena technically Warp itu VPN). Kalau enggan pakai gratisan dari pihak ketiga yang nggak jelas atau butuh cepat, bisa [bikin sendiri di Oracle Cloud](https://medium.com/@devinjaystokes/how-to-setup-an-ad-blocking-wireguard-vpn-server-with-pihole-in-the-cloud-for-free-e814e45aac50) ([video link](https://github.com/chadgeary/cloudblock#cloud-deployments), gratis, cuma modal kartu yang bisa verifikasi (Jenius, atau CC) dengan saldo ~300 ribu (dikembalikan setelah verifikasi, ada dua tahap verifikasi), selamanya bisa traffic 5 TB sebulan (dari total 10 TB, karena traffic VPN dihitung dua kali) max 50 Mbps.
+Download dan install [Warp Client](https://developers.cloudflare.com/warp-client/warp-for-everyone/setting-up), untuk Linux bisa pakai [wcgf](https://github.com/ViRb3/wgcf). **Masih** belum bisa juga? Berarti perlu VPN (lain, karena technically Warp itu VPN). Kalau enggan pakai gratisan dari pihak ketiga yang nggak jelas atau butuh cepat, bisa [bikin sendiri di Oracle Cloud](https://medium.com/@devinjaystokes/how-to-setup-an-ad-blocking-wireguard-vpn-server-with-pihole-in-the-cloud-for-free-e814e45aac50) ([video link](https://github.com/chadgeary/cloudblock#cloud-deployments), gratis, cuma modal kartu yang bisa verifikasi (Jenius, atau CC) dengan saldo ~300 ribu (dikembalikan setelah verifikasi, ada dua tahap verifikasi), selamanya bisa traffic 5 TB sebulan (dari total 10 TB, karena traffic VPN dihitung dua kali) max 50 Mbps, bisa punya dua IP bersamaan (pengguna total bisa jauh lebih banyak terganttung traffic).
+
+<a name="hipokrit"></a>
+## Blokir iklan, tracker & malware
+Setelah buka blokiran mau blokir yang nggak diinginkan? Bisa. Paling gampang pakai [AdGuard](https://kb.adguard.com/en/dns/setup-guide) atau [AhaDNS](https://ahadns.com/). Gratis, nggak usah mikir. Kalau mau lebih mendetail, pilih sendiri filter iklannya, monitor anggota keluarga, filter untuk anak dll bisa pakai [NextDNS](https://nextdns.io/), tapi setelah lebih dari 300 ribu query dalam sebulan, filter & logging nggak jalan (semua request tembus) sampai bulan berikutnya. Dan kalau ngerasa "oh bisa buat blokir bokep nih", ingat di atas itu semua panduannya juga bisa untuk ganti lagi ke provider yang nggak blokir, jadi nggak berguna untuk mencegah seseorang yang *sengaja* ingin buka.
+
+<a name="blabber"></a>
+## Detail Teknis
+Agar tersedia di internet, suatu situs harus dihost minimal di sebuah server yang memiliki/terjangkau dari public IP, berlaku seperti nomor telepon global. Umumnya, pemblokiran situs di Indonesia tidak memblokir langsung IP tersebut, hanya memodifikasi DNS query yang menanyakan IP dari domain (google.com, detik.com) suatu situs. Query DNS sangat mudah dimodifikasi oleh ISP karena standar DNS (Do53) tidak ada enkripsi, bahkan router murah pun bisa blokir/modifikasi query DNS.
+
+Walau ada standar DNSCrypt sejak 2011 yang dienkripsi sehingga tidak bisa dibaca ataupun dimodifikasi ISP, adopsinya baik di provider maupun client masih terbatas sampai sekarang. Baru sejak standar DNS-over-TLS (DoT) dan DNS-over-HTTPS (DoH) diperkenalkan, berbagai provider maupun client mulai dari OS sampai browser mengadopsi, karena sebenarnya penerapannya sangat simple. DoT punya kelemahan dengan menggunakan port unik (853), jadi sangat mudah untuk diblokir router/ISP, adopsi juga terbatas di Android. DoH lebih populer, didukung kedua browser utama (Chrome & Firefox, kebanyakan browser lain turunan dari mereka), iOS, macOS, dan (masih dalam Dev Channel) Windows. Penerapan DoH juga jauh lebih mudah: punya hosting PHP? Satu file pun cukup dengan [NotMikeDEV/DoH](https://github.com/NotMikeDEV/DoH). Punya akun Google Cloud? Tinggal copy paste dengan [tina-hello/doh-gcf](https://github.com/tina-hello/doh-gcf/tree/simpleDo53). Punya VPS? Ikuti instruksi sudah dapat fitur lengkap dengan [AdGuard Home]((https://github.com/AdguardTeam/AdGuardHome). Karena DoH berjalan diatas HTTPS, lebih sulit untuk router/ISP untuk membedakan dari traffic internet biasa.
+
+Tapi sulit bukan berarti tidak mungkin. Traffic DoH punya kekhasan dari ukurannya yang sangat kecil, mudah untuk diblokir ISP yang memantau statistik traffic. Memakai DoT dan DoH juga tidak menyembunyikan domain maupun IP yang dikunjungi, karena traffic HTTPS pun masih mengekspos domain tujuan dengan SNI, dan ISP jelas masih melihat IP tujuan. Ada standar ECH yang bisa menyembunyikan SNI, tapi adopsi masih sangat terbatas. Untuk menghindari itu semua, bisa pakai VPN karena semua traffic tidak terlihat ISP. Warp pada dasarnya VPN yang hanya mengenkripsi sampai jaringan Cloudflare terdekat, dan menyertakan IP asli di header agar situs tujuan bisa memblokir pengguna tertentu tanpa memblokir semua pengguna Warp.
