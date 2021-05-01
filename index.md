@@ -9,31 +9,31 @@
 <a name="android"></a>
 ## Android
 ### Pie (9) keatas
- Buka `Settings` - `Network & internet` - `Advanced` - `Private DNS`. Tidak ada? Install [QuickShortcutMaker](https://play.google.com/store/apps/details?id=com.sika524.android.quickshortcut), masuk ke Settings, cari dan tap `com.android.settings.Settings$NetworkDashboardActivity`
+Buka `Settings` - `Network & internet` - `Advanced` - `Private DNS`. Tidak ada? Install [QuickShortcutMaker](https://play.google.com/store/apps/details?id=com.sika524.android.quickshortcut), masuk ke Settings, cari dan tap `com.android.settings.Settings$NetworkDashboardActivity`
  
- Pilih `Private DNS provider hostname`
+Pilih `Private DNS provider hostname`
  
- Coba salah satu :
+Coba salah satu :
  * `dns.google` ([Google](https://developers.google.com/speed/public-dns/docs/dns-over-tls))
  * `security.cloudflare-dns.com` [Cloudflare](https://developers.cloudflare.com/1.1.1.1/1.1.1.1-for-families/setup-instructions/dns-over-https)
  * `dns.quad9.net` [Quad9](https://www.quad9.net/service/service-addresses-and-features#rec)
  * `dot.tiar.app` [Tiarap DNS](https://github.com/pengelana/blocklist#dot-dns-over-tls)
  * `doh.mullvad.net` [Mullvad](https://mullvad.net/en/help/dns-over-https-and-dns-over-tls/)
  
- Save. Cek koneksi internet. Kalau tidak ada koneksi, coba lainnya. Kalau semua tidak bisa, pilih `Off`, buka http://portquiz.net:853 :
+Save. Cek koneksi internet. Kalau tidak ada koneksi, coba lainnya. Kalau semua tidak bisa, pilih `Off`, buka http://portquiz.net:853 :
  * Kalau bisa dibuka, cari dari https://kb.adguard.com/en/general/dns-providers, pilih yang di baris `DNS-over-TLS`.
  * Kalau tidak bisa, ikuti panduan berikut
 
 ### Oreo (8) dan sebelumnya
- Install [Nebulo](https://play.google.com/store/apps/details?id=com.frostnerd.smokescreen) atau [Intra](https://play.google.com/store/apps/details?id=app.intra), pilih salah satu provider bawaan. Kalau semua tidak bisa, coba provider lain dari https://github.com/curl/curl/wiki/DNS-over-HTTPS. Jika *masih* tidak bisa, ikuti panduan [Warp Client](#warp)
+Install [Nebulo](https://play.google.com/store/apps/details?id=com.frostnerd.smokescreen) atau [Intra](https://play.google.com/store/apps/details?id=app.intra), pilih salah satu provider bawaan. Kalau semua tidak bisa, coba provider lain dari https://github.com/curl/curl/wiki/DNS-over-HTTPS. Jika *masih* tidak bisa, ikuti panduan [Warp Client](#warp)
  
- <a name="chrome"></a>
- ## Chrome, Edge, Brave, Opera
- Buka `Settings`, cari dan aktifkan `Secure DNS` atau `DNS-over-HTTPS`, pilih salah satu provider bawaan. Kalau semua tidak bisa, pilih Custom dan masukkan provider lain dari https://github.com/curl/curl/wiki/DNS-over-HTTPS. Jika *masih* tidak bisa, ikuti panduan [Warp Client](#warp)
+<a name="chrome"></a>
+## Chrome, Edge, Brave, Opera
+Buka `Settings`, cari dan aktifkan `Secure DNS` atau `DNS-over-HTTPS`, pilih salah satu provider bawaan. Kalau semua tidak bisa, pilih Custom dan masukkan provider lain dari https://github.com/curl/curl/wiki/DNS-over-HTTPS. Jika *masih* tidak bisa, ikuti panduan [Warp Client](#warp)
  
- <a name="apple"></a>
- ## iOS & macOS
- Import DoH dari salah satu profile di https://dns.notjakob.com/premades.html, download dan buka filenya. Lalu ke `Settings` (iOS)/`System Preferences` (macOS), `Profile Downloaded`(iOS)/`Profie`(macOS), pilih install. Kalau semua tidak bisa, buat custom profile dengan https://dns.notjakob.com/tool.html, pilih DoH dan masukkan provider dari https://github.com/curl/curl/wiki/DNS-over-HTTPS. Jika *masih* tidak bisa, ikuti panduan [Warp Client](#warp)
+<a name="apple"></a>
+## iOS & macOS
+Import DoH dari salah satu profile di https://dns.notjakob.com/premades.html, download dan buka filenya. Lalu ke `Settings` (iOS)/`System Preferences` (macOS), `Profile Downloaded`(iOS)/`Profie`(macOS), pilih install. Kalau semua tidak bisa, buat custom profile dengan https://dns.notjakob.com/tool.html, pilih DoH dan masukkan provider dari https://github.com/curl/curl/wiki/DNS-over-HTTPS. Jika *masih* tidak bisa, ikuti panduan [Warp Client](#warp)
 
 <a name="firefox"></a>
 ## Firefox, Pale Moon, Waterfox
