@@ -5,6 +5,7 @@
 * [Windows](#windows)
 * [Warp Client](#warp)
 * [Blokir iklan, tracker & malware](#hipokrit)
+* [Efek samping](#pandora)
 * [Detail Teknis](#blabber)
 
 <a name="android"></a>
@@ -46,11 +47,21 @@ Install [YogaDNS](https://yogadns.com/) untuk cover semua aplikasi di Windows, b
 
 <a name="warp"></a>
 ## Warp Client
-Download dan install [Warp Client](https://developers.cloudflare.com/warp-client/warp-for-everyone/setting-up), untuk Linux bisa pakai [wcgf](https://github.com/ViRb3/wgcf). **Masih** belum bisa juga? Berarti perlu VPN (lain, karena technically Warp itu VPN). Kalau enggan pakai gratisan dari pihak ketiga yang nggak jelas atau butuh cepat, bisa [bikin sendiri di Oracle Cloud](https://medium.com/@devinjaystokes/how-to-setup-an-ad-blocking-wireguard-vpn-server-with-pihole-in-the-cloud-for-free-e814e45aac50) ([video link])(https://github.com/chadgeary/cloudblock#cloud-deployments), gratis, cuma modal kartu yang bisa verifikasi (Jenius, atau CC) dengan saldo ~300 ribu dikembalikan setelah verifikasi (ada dua tahap verifikasi), selamanya bisa traffic 5 TB sebulan dari total 10 TB (karena traffic VPN dihitung dua kali, antara client dan server, dan server dan situs tujuan) max speed 50 Mbps, bisa punya dua IP bersamaan di VPS berbeda (pengguna total bisa jauh lebih banyak terganttung traffic).
+Download dan install [Warp Client](https://developers.cloudflare.com/warp-client/warp-for-everyone/setting-up), untuk Linux bisa pakai [wcgf](https://github.com/ViRb3/wgcf). **Masih** belum bisa juga? Berarti perlu VPN (lain, karena technically Warp itu VPN). Kalau enggan pakai gratisan dari pihak ketiga yang nggak jelas atau butuh cepat, bisa [bikin sendiri di Oracle Cloud](https://medium.com/@devinjaystokes/how-to-setup-an-ad-blocking-wireguard-vpn-server-with-pihole-in-the-cloud-for-free-e814e45aac50) ([video link](https://github.com/chadgeary/cloudblock#cloud-deployments)), gratis, cuma modal kartu yang bisa verifikasi (Jenius, atau CC) dengan saldo ~300 ribu dikembalikan setelah verifikasi (ada dua tahap verifikasi), selamanya bisa traffic 5 TB sebulan dari total 10 TB (karena traffic VPN dihitung dua kali, antara client dan server, dan server dan situs tujuan) max speed 50 Mbps, bisa punya dua IP bersamaan di VPS berbeda (pengguna total bisa jauh lebih banyak terganttung traffic).
 
 <a name="hipokrit"></a>
 ## Blokir iklan, tracker & malware
 Setelah buka blokiran mau blokir yang nggak diinginkan? Bisa. Paling gampang pakai [AdGuard](https://kb.adguard.com/en/dns/setup-guide) (ada blokir iklan, iklan + bokep) atau [AhaDNS](https://ahadns.com/) (murni blokir iklan). Blokir lebih mendalam untuk materi dewasa bisa pakai [CleanBrowsing](https://cleanbrowsing.org/guides/). Kalau mereka diblokir ISP, bisa pakai provider [yang kurang terkenal](https://github.com/curl/curl/wiki/DNS-over-HTTPS). Kalau mau lebih mendetail, pilih sendiri filter iklannya, monitor anggota keluarga, filter untuk anak dll bisa pakai [NextDNS](https://nextdns.io/), tapi setelah lebih dari 300 ribu query dalam sebulan, filter & logging nggak jalan (semua request tembus) sampai bulan berikutnya kecuali langganan. Dan kalau ngerasa "oh bisa buat blokir bokep nih", ingat di atas itu semua panduannya juga bisa untuk ganti lagi ke provider yang nggak blokir, jadi nggak berguna untuk mencegah seseorang yang *sengaja* ingin buka. Blokir iklan juga tidak sebagus metode extension seperti uBlock Origin, gunanya lebih sebagai pelengkap untuk aplikasi/OS yang tidak bisa pasang ekstensi.
+
+<a name="pandora"></a>
+## Efek samping
+Standar DoH bukan hanya bawa efek positif, ada beberapa efek negatif yang perlu diingat
+### Filter jaringan lebih sulit
+Jaringan bukan cuma seperti ISP yang "lah gua kan bayar ngapain lu sensor", tapi jaringan kantor, rumah dan sekolah jadi lebih sulit untuk diatur tanpa DPI, yang perangkatnya lebih mahal. DoT dan DoH juga mengabaikan konfigurasi di OS/jaringan. Misal, Chrome di Android diset memakai DoH A, query dari Chrome akan langsung dikirimkan ke DoH A, walaupun Private DNS diset ke DoT B, dan di jaringan menggunakan Do53 C.
+### Virus dan iklan bisa tembus blokir
+Yang bisa nembak DoH sendiri bukan cuma OS/browser, teorinya app apapun, bahkan situs, bisa bikin query ke server DoH mereka sendiri tanpa bisa dibaca oleh filter DNS.
+### Lebih mudah untuk stalking
+[NextDNS](https://nextdns.io/) dan [Cloudflare for Teams](https://www.cloudflare.com/teams/) memungkinkan stalker yang punya akses ke perangkat dalam 1 menit saja untuk ganti DoH yang digunakan ke endpoint DoH milik dia. Tanpa keluar uang dan menginstal apapun di perangkat korban, semua query DNS di perangkat itu bisa dipantau dari jaringan apapun.
 
 <a name="blabber"></a>
 ## Detail Teknis
