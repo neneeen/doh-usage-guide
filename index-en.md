@@ -60,7 +60,7 @@ The DoH standard didn't just brought positive effect, there are some negative ef
 ### Network filtering becomes harder
 This isn't just for ISP where "wait, I'm paying for my connection, why should it get censored?", but also for office, home and school networks where filtering becomes harder without DPI, which require more expensive hardware. DoT and DoH also ignore OS/network settings. For example, if Chrome on Android is set to use DoH A, Chrome's queries will go straight to DoH A, even if Private DNS is set to DoT B, and the network use Do53 C.
 ### Virus dan ad can also go through the block
-DoH sendiri isn't just available for OS/browser, in theory any apps, even sites, can create their own query to DoH server of their choosing without being read by DNS filter.
+DoH itself isn't just available for OS/browser, in theory any apps, even sites, can create their own query to DoH server of their choosing without being read by DNS filter.
 ### Easier stalking
 [NextDNS](https://nextdns.io/) and [Cloudflare for Teams](https://www.cloudflare.com/teams/) enable stalkers with direct access to the device to switch DoH provider under one minute to their own DoH endpoint. Without spending or installing anything in the victim's device, all DNS queries in that device can be monitored from anywhere.
 
