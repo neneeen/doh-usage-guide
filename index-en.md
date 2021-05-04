@@ -1,3 +1,4 @@
+Juga tersedia dalam [Bahasa Indonesia](index.md)
 * [Android](#android)
 * [Chrome, Edge, Brave, Opera](#chrome)
 * [iOS & macOS](#apple)
