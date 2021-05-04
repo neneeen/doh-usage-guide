@@ -24,7 +24,7 @@ Try one of :
  * `dot.tiar.app` [Tiarap DNS](https://github.com/pengelana/blocklist#dot-dns-over-tls)
  * `doh.mullvad.net` [Mullvad](https://mullvad.net/en/help/dns-over-https-and-dns-over-tls/)
  
-Save. Cek your connection. If there's no connection, try the other item in the list. If none of them works, choose `Off`, open [PortQuiz](http://portquiz.net:853) :
+Save. Check your connection. If there's no connection, try the other item in the list. If none of them works, choose `Off`, open [PortQuiz](http://portquiz.net:853) :
  * If it load, try [other providers](https://kb.adguard.com/en/general/dns-providers), pick those in the `DNS-over-TLS` line.
  * If it doesn't load, try the following section
 
