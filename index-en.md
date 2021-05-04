@@ -8,7 +8,7 @@ Juga tersedia dalam [Bahasa Indonesia](index.md)
 * [Block ad, tracker & malware](#hipokrit)
 * [Side effect](#pandora)
 * [Out of scope](#outofscope)
-* [Technical detai](#blabber)
+* [Technical detail](#blabber)
 
 <a name="android"></a>
 ## Android
