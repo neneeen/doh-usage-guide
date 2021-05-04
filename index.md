@@ -6,6 +6,7 @@
 * [Warp Client](#warp)
 * [Blokir iklan, tracker & malware](#hipokrit)
 * [Efek samping](#pandora)
+* [Yang tidak dilindungi](#outofscope)
 * [Detail Teknis](#blabber)
 
 <a name="android"></a>
@@ -62,6 +63,10 @@ Jaringan bukan cuma seperti ISP yang "lah gua kan bayar ngapain lu sensor", tapi
 Yang bisa nembak DoH sendiri bukan cuma OS/browser, teorinya app apapun, bahkan situs, bisa bikin query ke server DoH mereka sendiri tanpa bisa dibaca oleh filter DNS.
 ### Lebih mudah untuk stalking
 [NextDNS](https://nextdns.io/) dan [Cloudflare for Teams](https://www.cloudflare.com/teams/) memungkinkan stalker yang punya akses ke perangkat dalam 1 menit saja untuk ganti DoH yang digunakan ke endpoint DoH milik dia. Tanpa keluar uang dan menginstal apapun di perangkat korban, semua query DNS di perangkat itu bisa dipantau dari jaringan apapun.
+
+<a name="outofscope"></a>
+## Yang tidak dilindungi
+Panduan disini hanya memungkinan *mengakses* situs yang diblokir, namun tidak *menyembunyikan* aktivitas tersebut dari ISP, pemerintah, universitas, sekolah atau kantor. Untuk aktivitas yang selama ini sering dilaporkan (dan ditangkap) melalui UU ITE, asumsikan bahwa orang BIN selalu membaca semua traffic. Kalau menggunakan jaringan/VPN/perangkat milik organisasi, asumsikan semua traffic dibaca oleh divisi IT dan dilaporkan ke atasan.
 
 <a name="blabber"></a>
 ## Detail Teknis
