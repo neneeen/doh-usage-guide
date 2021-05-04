@@ -1,5 +1,3 @@
-title: "PAGE TITLE"
-
 Also available in [English](index-en.md)
 
 * [Android](#android)
