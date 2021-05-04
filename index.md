@@ -1,3 +1,5 @@
+Also available in [English](index-en.md)
+
 * [Android](#android)
 * [Chrome, Edge, Brave, Opera](#chrome)
 * [iOS & macOS](#apple)
