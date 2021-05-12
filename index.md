@@ -14,7 +14,7 @@ Also available in [English](index-en.md)
 <a name="android"></a>
 ## Android
 ### Pie (9) keatas
-Buka `Settings` - `Network & internet` - `Advanced` - `Private DNS`. Tidak ada? Install [QuickShortcutMaker](https://play.google.com/store/apps/details?id=com.sika524.android.quickshortcut), masuk ke Settings, cari dan tap `com.android.settings. Settings$NetworkDashboardActivity`
+Buka `Settings` - `Network & internet` - `Advanced` - `Private DNS`. Tidak ada? Install [QuickShortcutMaker](https://play.google.com/store/apps/details?id=com.sika524.android.quickshortcut), masuk ke Settings, cari dan tap `com.android.settings.` `Settings$NetworkDashboardActivity`
  
 Pilih `Private DNS provider hostname`
  
