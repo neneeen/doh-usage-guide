@@ -13,7 +13,7 @@ Juga tersedia dalam [Bahasa Indonesia](index.md)
 <a name="android"></a>
 ## Android
 ### Pie (9) and later
-Go to `Settings` - `Network & internet` - `Advanced` - `Private DNS`. No such menu? Install [QuickShortcutMaker](https://play.google.com/store/apps/details?id=com.sika524.android.quickshortcut), open Settings, find and launch `com.android.settings.` `Settings$NetworkDashboardActivity`
+Go to `Settings` - `Network & internet` - `Advanced` - `Private DNS`. No such menu? Install [QuickShortcutMaker](https://play.google.com/store/apps/details?id=com.sika524.android.quickshortcut), open Settings, find and launch `com.android.settings.` `Settings` `$NetworkDashboardActivity`
  
 Pick `Private DNS provider hostname`
  
