@@ -37,7 +37,7 @@ Open `Settings`, search and enable `Secure DNS` or `DNS-over-HTTPS`, pick one of
  
 <a name="apple"></a>
 ## iOS & macOS
-Import DoH from one of the [premade profiles](https://dns.notjakob.com/premades.html), download open the file. Then open `Settings` (iOS)/`System Preferences` (macOS), `Profile Downloaded`(iOS)/`Profie`(macOS), choose install. If none of them works, create a [custom profile](https://dns.notjakob.com/tool.html), pick DoH and enter [other providers](https://github.com/curl/curl/wiki/DNS-over-HTTPS). If *none* of them works, try [Warp Client](#warp) guide.
+Import DoH from one of the [premade profiles](https://encrypted-dns.party/), download open the file. Then open `Settings` (iOS)/`System Preferences` (macOS), `Profile Downloaded`(iOS)/`Profie`(macOS), choose install. If none of them works, create a [custom profile](https://dns.notjakob.com/tool.html), pick DoH and enter [other providers](https://github.com/curl/curl/wiki/DNS-over-HTTPS). If *none* of them works, try [Warp Client](#warp) guide.
 
 <a name="firefox"></a>
 ## Firefox, Pale Moon, Waterfox
