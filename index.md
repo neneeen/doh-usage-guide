@@ -26,7 +26,7 @@ Coba salah satu :
  * `doh.mullvad.net` [Mullvad](https://mullvad.net/en/help/dns-over-https-and-dns-over-tls/)
  
 Save. Cek koneksi internet. Kalau tidak ada koneksi, coba lainnya. Kalau semua tidak bisa, pilih `Off`, buka [PortQuiz](http://portquiz.net:853) :
- * Kalau bisa dibuka, coba [provider lain](https://kb.adguard.com/en/general/dns-providers), pilih yang di baris `DNS-over-TLS`.
+ * Kalau bisa dibuka, coba [provider lain](https://adguard-dns.io/kb/general/dns-providers/), pilih yang di baris `DNS-over-TLS`.
  * Kalau tidak bisa, ikuti panduan berikut
 
 ### Oreo (8) dan sebelumnya
@@ -42,7 +42,7 @@ Import DoH dari salah satu [profile premade](https://encrypted-dns.party/), down
 
 <a name="firefox"></a>
 ## Firefox, Pale Moon, Waterfox
-Buka `Option`, cari `Network Settings`, aktifkan `Enable DNS over HTTPS`, pilih dari provider bawaan. Kalau semua tidak bisa, pilih Custom dan masukkan [provider lain](https://github.com/curl/curl/wiki/DNS-over-HTTPS). Jika *masih* tidak bisa, ikuti panduan [Warp Client](#warp)
+Buka `Settings`, cari `Secure DNs`, aktifkan `Max Protection`, pilih dari provider bawaan. Kalau semua tidak bisa, pilih Custom dan masukkan [provider lain](https://github.com/curl/curl/wiki/DNS-over-HTTPS). Jika *masih* tidak bisa, ikuti panduan [Warp Client](#warp)
 
 <a name="windows"></a>
 ## Windows
