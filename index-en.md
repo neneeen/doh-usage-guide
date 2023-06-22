@@ -41,10 +41,10 @@ Import DoH from one of the [premade profiles](https://encrypted-dns.party/), dow
 
 <a name="firefox"></a>
 ## Firefox, Pale Moon, Waterfox
-Open `Option`, search for `Network Settings`, enable `Enable DNS over HTTPS`, pick one of the built-in providers. If none of them works, change to Custom and try [other providers](https://github.com/curl/curl/wiki/DNS-over-HTTPS). If *none* of them works, try [Warp Client](#warp) guide.
+Open `Settings`, search for `Secure DNS`, enable `Max Protection`, pick one of the built-in providers. If none of them works, change to Custom and try [other providers](https://github.com/curl/curl/wiki/DNS-over-HTTPS). If *none* of them works, try [Warp Client](#warp) guide.
 <a name="windows"></a>
 ## Windows
-Install [YogaDNS](https://yogadns.com/) to cover all application running on Windows, useful if the game server is blocked by your ISP. Not too stable, harder to configure custom providers (DoH needs server IP, not just the URL). Use only if you need to unblock outside your browser.
+Install [YogaDNS](https://yogadns.com/) to cover all applications running on Windows, useful if the game server is blocked by your ISP. Not too stable, harder to configure custom providers (DoH needs server IP, not just the URL). Use only if you need to unblock outside your browser.
 
 In Windows 11 or Windows 10 Insider, open the Command Line as Administrator, type `netsh dns add encryption server=IP dohtemplate=DOH autoupgrade=yes udpfallback=no`, replace the IP and DOH with a [provider](https://github.com/curl/curl/wiki/DNS-over-HTTPS) that have both IP and DNS over HTTPS, then set the DNS through the UI to that IP.
 <a name="warp"></a>
